@@ -1,21 +1,21 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>code with samir</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="{% url 'home' %}">home</a></li>
-            <li><a href="{% url 'about' %}">about</a></li>
-            <li><a href="{% url 'contact' %}">contact</a></li>
-            
-        </ul>
-    </nav>
-    <h1>this is contact page</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+samir
+{% endblock title %}
+
+{% block content %}
+<div class="contact-section h-[50vh] flex justify-center flex-col items-center">
+    <h1 class="text-green-500 text-[5rem] font-bold capitalize">Contact information</h1>
+    <div class="info-box">
+        <div class="line-box flex gap-6 text-3xl">
+            <p>Linkdin:</p>
+            <p class="text-right">Samir Rain</p>
+        </div>
+        <div class="line-box flex gap-6 text-3xl">
+            <p>mail:</p>
+            <p class="text-right">teamofsamir@gmail.com</p>
+        </div>
+    </div>
+</div>
+{% endblock  %}

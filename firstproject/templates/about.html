@@ -1,21 +1,19 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>code with samir</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="{% url 'home' %}">home</a></li>
-            <li><a href="{% url 'about' %}">about</a></li>
-            <li><a href="{% url 'contact' %}">contact</a></li>
-            
-        </ul>
-    </nav>
-    <h1>this is about page</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+samir
+{% endblock title %}
+
+{% block content %}
+<div class="about-section h-[70vh] flex justify-center gap-3 items-center">
+  <div class="left mr-6">
+    <div class="image-box border-2 border-orange-500">
+        <img src="https://media.licdn.com/dms/image/D5603AQGx6wWVXCRAIA/profile-displayphoto-shrink_200_200/0/1715672562649?e=2147483647&v=beta&t=u3bQcEVvGPIsoxMRo1AbIlQnbpM4qIf64PALzu6lahg" alt="">
+    </div>
+  </div>
+  <div class="right">
+    <h1 class="text-green-500 text-[3rem] font-bold capitalize">Mrs. Samir Rain</h1>
+    <p class="text-[1.5rem] capitalize">i am frontend developer</p>
+  </div>
+</div>
+{% endblock  %}
