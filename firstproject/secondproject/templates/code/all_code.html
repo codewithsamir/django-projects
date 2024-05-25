@@ -6,11 +6,15 @@ samir
 
 {% block content %}
 {% comment %} <h1>hello code with samir</h1> {% endcomment %}
-<div class="container grid-cols-3 border-2 border-orange-500">
+<div class="container flex ">
     {% for data in  newthing %}
-<div class="box border-2 border-orange-500">
-    <img src="{{newthing.image.url}}" alt="">
-    <h2>{{newthing.name}}
+<div class="box border-2 border-orange-500 p-5 rounded">
+    <img src="{{data.image.url}}" alt="">
+    <h2>{{data.name}}</h2>
+        <a href="" class=' p-4 text-xl w-full block border-2 bg-red-500'>
+            <button >{{data.type}} - {{data.id}} </button>
+        </a>
+        
 </div>
 {% endfor %}
 </div>
