@@ -5,5 +5,14 @@ samir
 {% endblock title %}
 
 {% block content %}
-<h1>hello code with samir</h1>
+{% comment %} <h1>hello code with samir</h1> {% endcomment %}
+<div class="container grid-cols-3 border-2 border-orange-500">
+    {% for data in  newthing %}
+<div class="box border-2 border-orange-500">
+    <img src="{{newthing.image.url}}" alt="">
+    <h2>{{newthing.name}}
+</div>
+{% endfor %}
+</div>
 {% endblock  %}
+
