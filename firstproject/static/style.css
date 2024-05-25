@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    background: darkblue;
+ padding: 30px;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   text-transform: capitalize;
+   color: white;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
